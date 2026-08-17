@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 385px;
+  padding: 40px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.location {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 26px;
+}
+
+.bio {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 26px;
+}
+
+.link {
+  display: block;
+  background: hsl(0, 0%, 20%);
+  padding: 12px;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link:last-child {
+  margin-bottom: 0;
+}
+
+.challenge {
+  color: hsl(75, 94%, 57%);
+}
+
+.attribution {
+  color: hsl(0, 0%, 100%);
+  padding: 11px;
+}
+
+@media (max-width: 450px) {
+  .profile{
+    width: 87%;
+    padding: 24px;
+  }
+  .attribution{
+    width: 90%;
+    padding: 24px;
+  }
+}
